@@ -1,3 +1,29 @@
 .addPost {
-    margin: 20px auto;
+  margin: 20px auto;
 }
+
+.link {
+  font-size: 70px;
+  border: 5px solid gray;
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  transition-duration: 0.3s;
+  &:hover {
+    transition-duration: 0.3s;
+    border: 5px solid black;
+    svg {
+      transition-duration: 0.3s;
+      color: black;
+    }
+  }
+}
+
+/*        color="gray"
+        onMouseMove={(target) => (target.currentTarget.style.color = "black")}
+        onMouseOut={(target) => (target.currentTarget.style.color = "gray")}
+        style={{ transitionDuration: "0.4s" }}*/
